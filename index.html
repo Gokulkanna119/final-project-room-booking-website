@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Room Booking System</title>
+</head>
+<body>
+    <h1>Hotel Room Booking System</h1>
+    
+    <!-- Room Gallery -->
+    <div class="room-gallery">
+        <div class="room" id="room-1">
+            <img src="images/room1.jpeg" alt="Room 1">
+            <p>Room 1: Deluxe Suite</p>
+        </div>
+        <div class="room" id="room-2">
+            <img src="images/room2.jpeg" alt="Room 2">
+            <p>Room 2: Standard Room</p>
+        </div>
+        <div class="room" id="room-3">
+            <img src="images/room3.jpeg" alt="Room 3">
+            <p>Room 3: Economy Room</p>
+        </div>
+    </div>
+
+    <!-- Booking Form -->
+    <form id="booking-form">
+        <label for="room">Select Room:</label>
+        <select id="room" required>
+            <option value="1">Room 1</option>
+            <option value="2">Room 2</option>
+            <option value="3">Room 3</option>
+        </select>
+        <br><br>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required>
+        <br><br>
+        <button type="submit">Book Room</button>
+    </form>
+
+    <!-- Bookings Table -->
+    <h2>Current Bookings</h2>
+    <table id="bookings-table">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>Dates</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Booking entries will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
